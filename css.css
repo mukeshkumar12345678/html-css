@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+.sun{
+    position: absolute;
+    top: 15em;
+    left: 35em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.mercury,.venus,.mars,.jupiter,.saturn,.urnas,.neptune{
+    position: absolute;
+     /* border-style: solid; 
+     border-color: rgb(6, 6, 6) transparent; 
+     border-width: 0.1em 0.1em 0 0; 
+    border-radius: 50%;  */
+}
+.mercury{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 5.5s linear infinite;
+}
+.mercury img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 220px;
+    top: 120px;
+}
+.venus{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 7.5s linear infinite;
+}
+.venus img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 215px;
+    top: 80px;
+}
+.earth{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 9.5s linear infinite;
+}
+.earth img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 205px;
+    top: 20px;
+}
+.mars{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 12.5s linear infinite;
+}
+.mars img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 200px;
+    bottom: 470px;
+}
+.jupiter{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 15.5s linear infinite;
+}
+.jupiter img{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 190px;
+    bottom: 530px;
+}
+.saturn{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 18.5s linear infinite;
+}
+.saturn img{
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    left: 200px;
+    bottom: 610px;
+}
+.uranus{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 21.5s linear infinite;
+}
+.uranus img{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: 200px;
+    bottom: 670px;
+}
+.neptune{
+    top: 5em;
+    left:25em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 24.5s linear infinite;
+}
+.neptune img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 200px;
+    bottom: 750px;
+}
+@keyframes orbit{
+    to{
+        transform: rotate(360deg);
+    }
+}
